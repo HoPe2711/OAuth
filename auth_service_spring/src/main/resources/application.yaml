@@ -1,0 +1,24 @@
+server:
+  port: 8081
+
+spring:
+
+  thymeleaf:
+    suffix: .html
+    cache: false
+    prefix: classpath:/templates/
+
+  messages:
+    basename: validation
+
+  data:
+    mongodb:
+      database: accountDB
+      host: localhost
+      port: 27017
+
+  management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
